@@ -1,3 +1,50 @@
+$padding_button_rl : 16px;
+$down_button_color: #f2f2f2;
+$down_button_text_color: #5F6368;
+#google_logo{
+    height: 92px;
+}
+#lupa{
+    height: 13.5px;   
+    align-self: center;
+    margin: 0 12px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    font-family: arial,sans-serif;
+}
 #upbar{
-    text-align: right;
+    justify-content: flex-end;
+}
+
+#container_textbar{
+    input{
+        border: none;
+        width: 540px;
+    }
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+#container_textbar:hover{
+        box-shadow: 0px 2px 10px -5px gray;
+}
+
+.down_button{
+    font-size: 14px;
+    margin: 5px;
+    padding: 0 $padding_button_rl;
+    height: 36px;
+    border-radius: 4px;
+    background-color: $down_button_color;
+    border: 1px solid $down_button_color;
+    color: $down_button_text_color;
+}
+
+.down_button:hover{
+    box-shadow: 0px 0px 6px -4px black;
+    border: 1px solid lightgray;
+    color: black;
 }
