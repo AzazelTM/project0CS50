@@ -28,7 +28,7 @@ html, body {
     width: 540px; }
 
 #elements {
-  height: 69%;
+  height: 72%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
