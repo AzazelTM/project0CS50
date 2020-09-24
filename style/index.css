@@ -1,3 +1,6 @@
+html, body {
+  height: 100%; }
+
 #google_logo {
   height: 92px; }
 
@@ -6,23 +9,41 @@
   align-self: center;
   margin: 0 12px; }
 
-div {
+.center_element {
   display: flex;
   justify-content: center;
   font-family: arial,sans-serif; }
 
 #upbar {
-  justify-content: flex-end; }
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px; }
 
 #container_textbar {
   border: 1px solid lightgray;
-  padding: 10px; }
+  padding: 10px;
+  margin: 25px; }
   #container_textbar input {
     border: none;
     width: 540px; }
 
+#elements {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 #container_textbar:hover {
   box-shadow: 0px 2px 10px -5px gray; }
+
+.up_button {
+  background-color: white;
+  border: none;
+  margin: 5px;
+  font-size: 13px; }
+
+.up_button:hover {
+  text-decoration: underline; }
 
 .down_button {
   font-size: 14px;
