@@ -2,16 +2,29 @@
 <html lang="en">
     <head>
         <title>Google Images</title>
-        <link rel="icon" href="images-icos/google.icos">
+        <link rel="icon" href="images-icos/google.ico">
+        <link rel="stylesheet" href="style/google-images.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
 
     <body>
-        <form action ="https://www.google.com/search">
-            <div>
-                <input type = "hidden" name = "tbm" value = "isch">
-                <input type = "text" name = "q">
+        <div id = "up-bar">
+            <a href="index.html"><input id="up-button" type = "button" value = "Google"></a>
+        </div>
+
+        <div id = "elements">
+            <div id = "google-logo-container">
+                <img src="images-icos/google_logo.png" alt="google-logo">
+                <span>images</span>
             </div>
-            <input type = "submit" value = "Search">
-        </form>
+            <div id = "form" class="rounded-pill">
+                <form action ="https://www.google.com/search">
+                        <img id = "img-dec" src="images-icos/lupa.png" alt="lupa">
+                        <input type = "hidden" name = "tbm" value = "isch">
+                        <input id = "text-bar" type = "text" name = "q">
+                    <button id = "btn-search"><img id = "img-button" src="images-icos/google-image-button.png" alt="lupa"></button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
