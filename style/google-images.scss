@@ -1,0 +1,77 @@
+html,body{
+    height: 100%;
+}
+
+#up-bar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+#up-button{
+    font-family: arial,sans-serif;
+    border: none;
+    font-size: 13px;
+    background-color: white;
+}
+
+#up-button:hover{
+    text-decoration: underline;
+}
+
+#elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+#google-logo-container{
+    height: 95px;
+    margin-bottom: 20px;
+    position: relative;
+    img{
+        height: 92px;
+    }
+
+    span{
+        font-family: arial,sans-serif;
+        position: absolute;
+        margin-top: 3px;
+        right: 11px;
+        bottom: 0px;
+        color: #4285f4;
+    }
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+#form:hover{
+    box-shadow: 0px 2px 10px -5px gray; 
+}
+
+#text-bar{
+    border: none;
+    width: 440px;
+    margin: 0 10px;
+}
+
+#btn-search{
+    border: none;
+    background-color: white;
+}
+#img-dec{
+    height: 13.5px;
+    margin-left: 10px
+}
+
+#img-button{
+    height: 15px;
+}
