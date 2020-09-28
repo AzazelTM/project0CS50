@@ -3,31 +3,47 @@
     <head>
         <title>Google Advanced Search</title>
         <link rel="icon" href="images-icos/google.ico">
+        <link rel="stylesheet" href="style/google-advanced.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
 
     <body>
-        <div>Advanced Search</div>
-        <div>Find pages with...</div>
-        <div>
+        <div id="up-bar">
+            <img id="logo" src="images-icos/google_logo.png" alt="Google">
+            <a href="index.html"><input id="up-button" type="button" value="Google"></a>
+        </div>
+        <div id= "title-bar">Advanced Search</div>
+        <div id = "main-container" class="container-fluid">
+            <div class ="row no-gutters">
+                <div class = "col-2">Find pages with...</div>
+                <div class = "col-5"></div>
+                <div class="d-none d-lg-block col-lg-3" id = "title-caption">To do this in the search box.</div>
+            </div>
             <form action="https://www.google.com/search">
-                <div>
-                    <label for = "atw">all these words:</label>
-                    <input id = "atw" type = "text" name = "as_q">
+                <div class="row">
+                    <label class= "col-4 col-lg-2" for = "atw">all these words:</label>
+                    <input class= "col-6 col-lg-5 text-box" id = "atw" type = "text" name = "as_q">
+                    <div class="d-none d-lg-block col-lg-3 texto"> Type the important words: <span>tri-colour rat terrier</span></div>
                 </div>
-                <div>
-                    <label for = "tewp">the exact word or phrase:</label>
-                    <input id = "tewp" type = "text" name = "as_epq">
+                <div class="row">
+                    <label class= "col-4 col-lg-2" for = "tewp">the exact word or phrase:</label>
+                    <input class= "col-6 col-lg-5 text-box" id = "tewp" type = "text" name = "as_epq">
+                    <div class="d-none d-lg-block col-lg-3 texto">Put exact words in quotes: <span>"rat terrier"</span></div>
                 </div>
-                <div>
-                    <label for = "aotw">any of these words:</label>
-                    <input id = "aotw" type = "text" name = "as_oq">
+                <div class="row">
+                    <label class= "col-4 col-lg-2" for = "aotw">any of these words:</label>
+                    <input class= "col-6 col-lg-5 text-box" id = "aotw" type = "text" name = "as_oq">
+                    <div class="d-none d-lg-block col-lg-3 texto">Type OR between all the words you want: miniature OR standar</div>
                 </div>
-                <div>
-                    <label for = "notw">none of these words:</label>
-                    <input id = "notw" type = "text" name = "as_eq">
+                <div class="row">
+                    <label class= "col-4 col-lg-2" for = "notw">none of these words:</label>
+                    <input class= "col-6 col-lg-5 text-box" id = "notw" type = "text" name = "as_eq">
+                    <div class="d-none d-lg-block col-lg-3 texto">Put a minus sign just before words that you don't want: <span>-rodent, -"Jack Russell"</span></div>
                 </div>
-                <div>
-                    <input type = "submit" value = "Advanced Search">
+                <div class="row no-gutters">
+                    <div id="button-container" class ="col-10 col-lg-7">
+                        <input id = "search-button" type = "submit" value = "Advanced Search">
+                    </div>
                 </div>
             </form>
         </div>
